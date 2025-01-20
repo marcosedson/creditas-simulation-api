@@ -30,7 +30,6 @@ class LoanCalculationUtilsTest {
 
     @Test
     void testCalculateLoanWithVariableRate() {
-        // Configuração do request
         LoanSimulationRequest request = new LoanSimulationRequest();
         request.setLoanAmount(BigDecimal.valueOf(10000)); // Valor base
         request.setBirthDate(LocalDate.of(1990, 1, 1));   // Idade ~33 anos
@@ -38,18 +37,14 @@ class LoanCalculationUtilsTest {
         request.setInterestRateType(Taxes.VARIABLE.name());
         request.setInterestRateMargin(0.02);             // Margem extra de 2%
 
-        // Chamar o método de cálculo
         LoanEntity result = LoanCalculationUtils.calculateLoan(request);
 
-        // Log para análise (só temporário, remova quando estiver ajustado)
         System.out.println("Total Amount: " + result.totalAmount());
         System.out.println("Monthly Payment: " + result.monthlyPayment());
         System.out.println("Total Interest: " + result.totalInterest());
 
-        // Validação dos resultados
         assertNotNull(result);
 
-        // Ajuste os valores esperados conforme a lógica (10272.9 parece mais correto pelo cálculo atual)
         assertEquals(BigDecimal.valueOf(10272.90), result.totalAmount());
         assertEquals(BigDecimal.valueOf(856.07), result.monthlyPayment());
         assertEquals(BigDecimal.valueOf(272.90), result.totalInterest());

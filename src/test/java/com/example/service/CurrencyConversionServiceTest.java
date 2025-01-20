@@ -19,7 +19,7 @@ import static org.mockito.Mockito.*;
 class CurrencyConversionServiceTest {
 
     @Mock
-    private Client mockClient; // Mock do Cliente HTTP
+    private Client mockClient;
 
     @Mock
     private WebTarget mockWebTarget;

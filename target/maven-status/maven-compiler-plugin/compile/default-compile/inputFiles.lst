@@ -1,0 +1,13 @@
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/controller/LoanSimulationController.java
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/domain/LoanEntity.java
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/domain/LoanSimulationRequest.java
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/domain/TaskState.java
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/enums/Taxes.java
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/response/ErrorResponse.java
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/response/StatusResponse.java
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/response/TaskResponse.java
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/service/CurrencyConversionService.java
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/service/LoanSimulationService.java
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/service/LoanSimulationServiceImpl.java
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/util/LoanCalculationUtils.java
+/home/marcos-marcon/IdeaProjects/cred-simulation-api/src/main/java/com/example/util/ValidationUtils.java

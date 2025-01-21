@@ -22,12 +22,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/simulations",
+					"raw": "localhost:8080/v1/simulations",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"v1",
 						"simulations"
 					]
 				}
@@ -49,12 +50,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/simulations",
+					"raw": "localhost:8080/v1/simulations",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"v1",
 						"simulations"
 					]
 				}
@@ -76,12 +78,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/simulations",
+					"raw": "localhost:8080/v1/simulations",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"v1",
 						"simulations"
 					]
 				}
@@ -103,12 +106,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/simulations",
+					"raw": "localhost:8080/v1/simulations",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"v1",
 						"simulations"
 					]
 				}
@@ -130,12 +134,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/simulations/tasks",
+					"raw": "localhost:8080/v1/simulations/tasks",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
+						"v1",
 						"simulations",
 						"tasks"
 					]

@@ -75,7 +75,7 @@ Uma collection de Postman chamada `creditas-simulations-api.postman_collection.j
 
 ### **Endpoint 1: Processar Simulação de Crédito (Síncrona)**
 **Descrição**: Realiza o processamento de uma única simulação de crédito.  
-**URL**: `POST /simulations`  
+**URL**: `POST /v1/simulations`  
 **Headers**: `Content-Type: application/json`  
 **Body**:
 
@@ -106,7 +106,7 @@ Uma collection de Postman chamada `creditas-simulations-api.postman_collection.j
 
 ### **Endpoint 2: Iniciar Processamento de Múltiplas Simulações (Assíncrono)**
 **Descrição**: Envia múltiplas simulações de crédito para processamento assíncrono.  
-**URL**: `POST /simulations/tasks`  
+**URL**: `POST /v1/simulations/tasks`  
 **Headers**: `Content-Type: application/json`  
 **Body**:
 
@@ -142,7 +142,7 @@ Uma collection de Postman chamada `creditas-simulations-api.postman_collection.j
 
 ### **Endpoint 3: Consultar Status da Tarefa**
 **Descrição**: Verifica o status do processamento de uma tarefa específica.  
-**URL**: `GET /simulations/tasks/{taskId}/status`  
+**URL**: `GET /v1/simulations/tasks/{taskId}/status`  
 **Headers**: Nenhum necessário.
 
 **Exemplo de Resposta (Status Pendente)**:
@@ -165,28 +165,28 @@ Uma collection de Postman chamada `creditas-simulations-api.postman_collection.j
 
 ### **Endpoint 4: Obter Resultados da Tarefa**
 **Descrição**: Recupera os resultados processados de uma tarefa específica.  
-**URL**: `GET /simulations/tasks/{taskId}/results`  
+**URL**: `GET /v1/simulations/tasks/{taskId}/results`  
 **Headers**: Nenhum necessário.
 
 **Exemplo de Resposta**:
 ```json
 [
-  {
-    "loanAmount": 20000,
-    "paymentTermInMonths": 24,
-    "monthlyPayment": 895.23,
-    "totalPayment": 21485.52,
-    "interestRateType": "VARIABLE",
-    "currency": "USD"
-  },
-  {
-    "loanAmount": 10000,
-    "paymentTermInMonths": 12,
-    "monthlyPayment": 857.53,
-    "totalPayment": 10290.36,
-    "interestRateType": "FIXED",
-    "currency": "EUR"
-  }
+   {
+      "loanAmount": 20000,
+      "paymentTermInMonths": 24,
+      "monthlyPayment": 895.23,
+      "totalPayment": 21485.52,
+      "interestRateType": "VARIABLE",
+      "currency": "USD"
+   },
+   {
+      "loanAmount": 10000,
+      "paymentTermInMonths": 12,
+      "monthlyPayment": 857.53,
+      "totalPayment": 10290.36,
+      "interestRateType": "FIXED",
+      "currency": "EUR"
+   }
 ]
 ```
 
@@ -220,5 +220,3 @@ src/main
 A escolha pela arquitetura hexagonal (Ports and Adapters) foi baseada na necessidade de desacoplar os serviços de negócios do restante da aplicação (como repositórios, APIs ou outros conectores). Para processar grandes volumes de simulações, utiliza-se APIs reativas e processamento assíncrono via `CompletableFuture`.
 
 ---
-
-Se precisar de mais alterações ou ajuda, estarei à disposição! 😊

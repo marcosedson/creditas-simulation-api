@@ -1,0 +1,48 @@
+# Logs
+logs/
+*.log
+
+# Compilados do Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Arquivos de configuração gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Diretórios de IDEs
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Node modules (caso o projeto use algum frontend integrado)
+node_modules/
+
+# Configurações específicas de usuário
+*.swp
+*.swo
+*.bak
+*~
+
+# Builds nativos gerados pelo Quarkus
+*.runner
+*.native
+
+# Arquivos temporários
+*.tmp
+*.pid
+
+# Arquivos de credenciais ou sensíveis (exemplo, application.properties locais ou docker)
+*.env
+application-local.properties
+docker-compose.override.yml

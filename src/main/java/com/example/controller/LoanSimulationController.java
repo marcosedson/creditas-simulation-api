@@ -21,7 +21,7 @@ import static com.example.util.ValidationUtils.validateLoanRequest;
 import static com.example.util.ValidationUtils.validateLoanRequests;
 
 
-@Path("/simulations")
+@Path("/v1/simulations")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 @Tag(name = "Loan Simulations", description = "Endpoints de simulações de empréstimos.")
